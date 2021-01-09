@@ -1,1 +1,1 @@
-web: gunicorn app:bellybutton-plotly-test
+web: gunicorn app:app

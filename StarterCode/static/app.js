@@ -1,5 +1,5 @@
 // test to see if server is recieving data //
-d3.json(" ./samples.json").then((data) => {
+d3.json(" ../static/samples.json").then((data) => {
     // data => names, metadata, samples //
     console.log(data)
     // names : list of id numbers //
@@ -23,7 +23,7 @@ d3.json(" ./samples.json").then((data) => {
 function optionChanged(input) {
     input = +input
     console.log(input)
-    d3.json("./samples.json").then(data => {
+    d3.json("../static/samples.json").then(data => {
         
         // matching selected id to metadata
         var metadata = data.metadata
